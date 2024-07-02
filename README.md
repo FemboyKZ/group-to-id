@@ -1,4 +1,4 @@
-# group-to-id
+# Group to ID
 
 Basic script to fetch members steamID64's from a Steam Group, and save them in a `whitelist.txt` file
 
