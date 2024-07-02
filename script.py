@@ -2,7 +2,6 @@ import requests
 import xmltodict
 
 def fetch_and_save_member_ids(group_url_name):
-    # Construct the URL to get the group members in XML format
     url = f'https://steamcommunity.com/groups/{group_url_name}/memberslistxml/?xml=1'
     
     response = requests.get(url)
