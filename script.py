@@ -12,7 +12,7 @@ def fetch_and_save_member_ids(group_url_name):
     
     member_ids = data_dict['memberList']['members']['steamID64']
     
-    with open('{txt_name}.txt', 'w') as file:
+    with open(f'{txt_name}.txt', 'w') as file:
         for steamid in member_ids:
             file.write(f"{steamid}\n")
 
@@ -21,4 +21,4 @@ group_url_name = 'FemWL' # group url
 
 fetch_and_save_member_ids(group_url_name)
 
-print("Member IDs have been saved to {txt_name}.txt")
+print(f"Member IDs have been saved to {txt_name}.txt")
